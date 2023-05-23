@@ -1,0 +1,41 @@
+[ {
+  "id" : 2,
+  "clientFullName" : "Ramiro Ortiz",
+  "roomNumber" : 17,
+  "reservationDates" : [ "2023-06-10", "2023-06-11" ]
+}, {
+  "id" : 3,
+  "clientFullName" : "Pedro Romero",
+  "roomNumber" : 40,
+  "reservationDates" : [ "2023-07-01", "2023-07-02" ]
+}, {
+  "id" : 4,
+  "clientFullName" : "Josefina Rosales",
+  "roomNumber" : 412,
+  "reservationDates" : [ "2023-09-14", "2023-05-24" ]
+}, {
+  "id" : 1,
+  "clientFullName" : "Adam Smith",
+  "roomNumber" : 1,
+  "reservationDates" : [ "2023-05-27", "2023-05-19" ]
+}, {
+  "id" : 5,
+  "clientFullName" : "Juana Zamora",
+  "roomNumber" : 2,
+  "reservationDates" : [ "2023-05-23", "2023-05-24", "2023-05-25" ]
+}, {
+  "id" : 7,
+  "clientFullName" : "Alfonso Medina",
+  "roomNumber" : 4812,
+  "reservationDates" : [ "2023-05-19" ]
+}, {
+  "id" : 8,
+  "clientFullName" : "Miguel",
+  "roomNumber" : 1,
+  "reservationDates" : [ "2023-05-18" ]
+}, {
+  "id" : 6,
+  "clientFullName" : "Roberta Carmela",
+  "roomNumber" : 88,
+  "reservationDates" : [ "2023-05-19" ]
+} ]

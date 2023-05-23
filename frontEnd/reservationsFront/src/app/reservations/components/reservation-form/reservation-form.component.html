@@ -1,0 +1,55 @@
+<div class="card card-margins">
+  <div class="card-body">
+    <h3 class="card-title">{{title}}</h3>
+    <form #reservationForm="ngForm">
+      <div class="mb-3">
+        <label for="clientFullName">Full Name</label>
+        <input type="text"
+               [(ngModel)]="reservation.clientFullName"
+               id="clientFullName"
+               name="clientFullName"
+               class="form-control">
+        <div *ngIf="errors.clientFullName" class="alert alert-danger" role="alert">
+          {{errors.clientFullName}}
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="roomNumber">Room Number</label>
+        <input type="text"
+               [(ngModel)]="reservation.roomNumber"
+               id="roomNumber"
+               name="roomNumber"
+               class="form-control">
+        <div *ngIf="errors.roomNumber" class="alert alert-danger" role="alert">
+          {{errors.roomNumber}}
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div *ngIf="errors.reservationDates" class="alert alert-danger" role="alert">
+            {{errors.reservationDates}}
+          </div>
+          <app-date-list
+            [reservationDates] = "reservation.reservationDates"
+          ></app-date-list>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 offset-8 ">
+          <div class="bd-example float-end">
+            <button class="btn btn-secondary" (click)="closeModal()">Close</button>
+            <button class="btn btn-success" *ngIf="!reservation.id" (click)="addReservation()">Add Reservation</button>
+            <button class="btn btn-warning" *ngIf="reservation.id" (click)="updateReservation()">Update Reservation</button>
+          </div>
+
+        </div>
+      </div>
+    </form>
+
+
+
+  </div>
+
+</div>
+

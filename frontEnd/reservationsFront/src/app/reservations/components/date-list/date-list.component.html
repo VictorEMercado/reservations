@@ -1,0 +1,28 @@
+<div class="mb-3">
+  <div class="row">
+    <div class="col-9">
+      <h4 class="header-modal">Reserved Dates</h4>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-success float-end" (click)="addDate()">Add Date</button>
+    </div>
+
+
+  </div>
+  <div class="row" *ngFor="let date of reservationDates; let i=index">
+    <div class="col-9">
+      <input type="date"
+              id="date{{i}}"
+              name="date{{i}}"
+              class="form-control date-input"
+              [(ngModel)]="reservationDates[i]"
+      >
+    </div>
+    <div class="col-3">
+      <button class="btn btn-danger float-end delete-button" (click)="deleteDate(i)">Delete</button>
+    </div>
+  </div>
+
+
+
+</div>
